@@ -1,0 +1,49 @@
+{
+  "name": "p-wait-for-value",
+  "version": "0.0.0",
+  "description": "Wait for a call to return existy, then return the value",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --nolazy --inspect-brk=9229 node_modules/.bin/tape 'test.js'",
+    "test": "run-s test:*",
+    "test:lint": "standard --verbose | snazzy",
+    "test:tape": "tape 'test.js' | tap-format-spec",
+    "test:deps": "dependency-check package.json --missing --unused --no-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcomnes/p-wait-for-value.git"
+  },
+  "keywords": [
+    "promise",
+    "wait",
+    "for",
+    "waits",
+    "condition",
+    "poll",
+    "polling",
+    "boolean",
+    "async",
+    "await",
+    "promises",
+    "bluebird"
+  ],
+  "author": "Bret Comnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcomnes/p-wait-for-value/issues"
+  },
+  "homepage": "https://github.com/bcomnes/p-wait-for-value#readme",
+  "dependencies": {
+    "existy": "^1.0.1",
+    "p-wait-for": "^1.0.0"
+  },
+  "devDependencies": {
+    "@tap-format/spec": "^0.2.0",
+    "dependency-check": "^3.1.0",
+    "npm-run-all": "^4.0.2",
+    "snazzy": "^7.1.1",
+    "standard": "^10.0.0",
+    "tape": "^4.7.0"
+  }
+}
