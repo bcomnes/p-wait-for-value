@@ -1,5 +1,5 @@
 'use strict'
-const waitFor = require('p-wait-for')
+const waitFor = require('./p-wait-for')
 const existy = require('existy')
 
 module.exports = (condition, opts) => {

@@ -8,7 +8,7 @@
     "test": "run-s test:*",
     "test:lint": "standard --verbose | snazzy",
     "test:tape": "tape 'test.js' | tap-format-spec",
-    "test:deps": "dependency-check package.json --missing --unused --no-dev"
+    "test-skip:deps": "dependency-check package.json --missing --unused --no-dev"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,8 @@
   "homepage": "https://github.com/bcomnes/p-wait-for-value#readme",
   "dependencies": {
     "existy": "^1.0.1",
-    "p-wait-for": "^1.0.0"
+    "p-timeout": "^2.0.1",
+    "p-wait-for": "1.0.0"
   },
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
