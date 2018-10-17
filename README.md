@@ -15,7 +15,7 @@ $ npm install --save p-wait-for-value
 ## Usage
 
 ```js
-const pWaitFor = require('p-wait-for-value');
+const pWaitForValue = require('p-wait-for-value');
 const pathExists = require('path-exists');
 const get = require('lodash.get');
 
